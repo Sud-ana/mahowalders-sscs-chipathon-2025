@@ -36,11 +36,11 @@ This document outlines the official schedule for the SSCS Chipathon 2025 event.
 ### Phase 4: Layout and Verification
 | Week | Date | Event | Details | 🔴 Recording | 📊 Slides | 📄 Report |
 |------|------|-------|----------|:-----------:|:--------:|:------:|
-| Week 34 | Aug 22, 2025 | **Layout Tutorial** 🎓 | Layout, DRC, LVS, PEX (Mitch, Tim) | [TBA]() | [TBA]() | [TBA]() |
-| Week 35 | Aug 29, 2025 | **Integration Tutorial** 🎓 | Top level, ESD, padframe, packaging (Juan, Akira) | [TBA]() | [TBA]() | [TBA]() |
+| Week 34 | Aug 22, 2025 | **Layout Tutorial** 🎓 | DRC, LVS, PEX (Mitch, Juan) | [Watch](https://us06web.zoom.us/rec/share/V5LaxeZ7_9mHHxsBZUH5DOLGbqsueqXJ4nHsCY-wEyOtNoIVUuY6BvyM5lFCYLlf.prEE7YaBKx1dK9xD) | [View](https://docs.google.com/presentation/d/e/2PACX-1vSWJpzcF4YcCIMZZyzKtlwh23Jb9oJJwXLI0_YIe4CawaFsfIc1-ICspGesJhRVpA/pub) | [Submit](https://docs.google.com/forms/d/e/1FAIpQLSfT2ofsHqWa5yf5_Zlgi9wgvJLY6Ro6N2GVDgH1q8I8yqm4EA/viewform?usp=dialog) |
+|  | Aug 22, 2025 | **DRC Dry-run** | GDS to Channel Partner |  |  |  |  |
+| Week 35 | Aug 29, 2025 | **Integration Tutorial** 🎓 | Layout, Top level, ESD, padframe, packaging (Tim, Juan, Akira) | [TBA]() | [TBA]() | [TBA]() |
 | Week 36 | Sept 05, 2025 | **Layout Review (blocks)** 👥 | - | [TBA]() | [TBA]() | [TBA]() |
 | Week 37 | Sept 12, 2025 | **Layout Review (top level)** 👥 | - | [TBA]() | [TBA]() | [TBA]() |
-|  | Sept 12, 2025 | **DRC Dry-run** | GDS to Channel Partner |  |  |  |  |
 | Week 38 | Sept 19, 2025 | **Verification** 👥 | Simulations w/ PEX + CACE | [TBA]() | [TBA]() | [TBA]() |
 | Week 39 | Sept 26, 2025 | **Final Chip Review** 👥 | - | [TBA]() | [TBA]() | [TBA]() |
 |  | Sept 26, 2025 | **Final Submission** | DRC-clean GDS to Channel Partner |  |  |  |  |
