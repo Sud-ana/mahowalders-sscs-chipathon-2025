@@ -20,5 +20,5 @@ The following table provides a comprehensive list of pins, including their uniqu
 | 33     | IOUTP_20UA | Analog  | Output       | AXX Onchip | gf180mcu_fd_io_asig_5p0 |
 | 34     | IOUTN_50UA | Analog  | Output       | AXX Onchip | gf180mcu_fd_io_asig_5p0 |
 | 35     | IOUTP_50UA | Analog  | Output       | AXX Onchip | gf180mcu_fd_io_asig_5p0 |
-| 36     | VREFN      | Analog  |              | AXX Onchip |                           |
-| 37     | VREFP      | Analog  |              | AXX Onchip |                           |
+| 36     | VREFN      | Analog  | Output       | AXX Onchip | gf180mcu_fd_io_asig_5p0 |
+| 37     | VREFP      | Analog  | Output       | AXX Onchip | gf180mcu_fd_io_asig_5p0 |
