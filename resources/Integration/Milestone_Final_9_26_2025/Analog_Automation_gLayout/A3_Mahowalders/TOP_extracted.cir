@@ -1,0 +1,170 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 25/09/2025 23:14
+
+* cell TOP
+* pin VDD,VSS
+* pin ENA
+* pin EN
+* pin ZN,tieL
+* pin Z,tieH
+* pin VBIAS_INT
+* pin VBIAS
+* pin VCM_OUT
+* pin VIN_OUT
+* pin BCM_OUT
+* pin CCM_OUT
+* pin VIN_INT
+* pin VIN
+* pin gf180mcu_gnd
+.SUBCKT TOP VDD|VSS ENA EN ZN|tieL Z|tieH VBIAS_INT VBIAS VCM_OUT VIN_OUT
++ BCM_OUT CCM_OUT VIN_INT VIN gf180mcu_gnd
+* device instance $1 r0 *1 2003.315,1227.84 pfet_03v3
+M$1 VDD|VSS VDD|VSS VDD|VSS VDD|VSS pfet_03v3 L=2U W=180U AS=104.4P AD=104.4P
++ PS=380.88U PD=380.88U
+* device instance $2 r0 *1 2007.355,1227.84 pfet_03v3
+M$2 VIN_INT VIN_INT \$265 VDD|VSS pfet_03v3 L=2U W=10U AS=6P AD=6P PS=21.2U
++ PD=21.2U
+* device instance $3 r0 *1 2011.305,1227.84 pfet_03v3
+M$3 \$248 VIN_INT \$247 VDD|VSS pfet_03v3 L=2U W=10U AS=6P AD=6P PS=21.2U
++ PD=21.2U
+* device instance $4 r0 *1 2015.255,1227.84 pfet_03v3
+M$4 \$250 VIN_INT \$249 VDD|VSS pfet_03v3 L=2U W=10U AS=6P AD=6P PS=21.2U
++ PD=21.2U
+* device instance $5 r0 *1 2019.205,1227.84 pfet_03v3
+M$5 \$252 VIN_INT \$251 VDD|VSS pfet_03v3 L=2U W=10U AS=6P AD=6P PS=21.2U
++ PD=21.2U
+* device instance $6 r0 *1 2023.155,1227.84 pfet_03v3
+M$6 VIN_OUT VIN_INT \$253 VDD|VSS pfet_03v3 L=2U W=10U AS=6P AD=6P PS=21.2U
++ PD=21.2U
+* device instance $9 r0 *1 2007.355,1254.58 pfet_03v3
+M$9 \$265 \$265 VDD|VSS VDD|VSS pfet_03v3 L=2U W=10U AS=6P AD=6P PS=21.2U
++ PD=21.2U
+* device instance $10 r0 *1 2011.305,1254.58 pfet_03v3
+M$10 \$247 \$265 VDD|VSS VDD|VSS pfet_03v3 L=2U W=10U AS=6P AD=6P PS=21.2U
++ PD=21.2U
+* device instance $11 r0 *1 2015.255,1254.58 pfet_03v3
+M$11 \$249 \$265 VDD|VSS VDD|VSS pfet_03v3 L=2U W=10U AS=6P AD=6P PS=21.2U
++ PD=21.2U
+* device instance $12 r0 *1 2019.205,1254.58 pfet_03v3
+M$12 \$251 \$265 VDD|VSS VDD|VSS pfet_03v3 L=2U W=10U AS=6P AD=6P PS=21.2U
++ PD=21.2U
+* device instance $13 r0 *1 2023.155,1254.58 pfet_03v3
+M$13 \$253 \$265 VDD|VSS VDD|VSS pfet_03v3 L=2U W=10U AS=6P AD=6P PS=21.2U
++ PD=21.2U
+* device instance $16 r0 *1 1830.14,1301.495 pfet_03v3
+M$16 VBIAS_INT VBIAS_INT \$354 VDD|VSS pfet_03v3 L=2U W=100U AS=60P AD=60P
++ PS=212U PD=212U
+* device instance $26 r0 *1 1870.99,1301.495 pfet_03v3
+M$26 \$356 VBIAS_INT \$355 VDD|VSS pfet_03v3 L=2U W=10U AS=6P AD=6P PS=21.2U
++ PD=21.2U
+* device instance $29 r0 *1 1936.56,1301.495 pfet_03v3
+M$29 \$347 \$347 \$358 VDD|VSS pfet_03v3 L=2U W=100U AS=60P AD=60P PS=212U
++ PD=212U
+* device instance $39 r0 *1 1977.41,1301.495 pfet_03v3
+M$39 \$314 \$347 \$359 VDD|VSS pfet_03v3 L=2U W=10U AS=6P AD=6P PS=21.2U
++ PD=21.2U
+* device instance $42 r0 *1 2009.33,1281.84 pfet_03v3
+M$42 \$265 ENA VDD|VSS VDD|VSS pfet_03v3 L=2U W=40U AS=24P AD=24P PS=84.8U
++ PD=84.8U
+* device instance $48 r0 *1 1830.14,1316.025 pfet_03v3
+M$48 \$354 \$354 VDD|VSS VDD|VSS pfet_03v3 L=2U W=100U AS=60P AD=60P PS=212U
++ PD=212U
+* device instance $58 r0 *1 1870.99,1316.025 pfet_03v3
+M$58 \$355 \$354 VDD|VSS VDD|VSS pfet_03v3 L=2U W=10U AS=6P AD=6P PS=21.2U
++ PD=21.2U
+* device instance $61 r0 *1 1936.56,1316.025 pfet_03v3
+M$61 \$358 \$358 VDD|VSS VDD|VSS pfet_03v3 L=2U W=100U AS=60P AD=60P PS=212U
++ PD=212U
+* device instance $71 r0 *1 1977.41,1316.025 pfet_03v3
+M$71 \$359 \$358 VDD|VSS VDD|VSS pfet_03v3 L=2U W=10U AS=6P AD=6P PS=21.2U
++ PD=21.2U
+* device instance $74 r0 *1 1830.14,1334.515 pfet_03v3
+M$74 \$354 ENA VDD|VSS VDD|VSS pfet_03v3 L=2U W=10U AS=6P AD=6P PS=21.2U
++ PD=21.2U
+* device instance $77 r0 *1 1936.56,1334.515 pfet_03v3
+M$77 \$358 ENA VDD|VSS VDD|VSS pfet_03v3 L=2U W=10U AS=6P AD=6P PS=21.2U
++ PD=21.2U
+* device instance $79 r0 *1 2575.275,1132.85 pfet_05v0
+M$79 \$201 \$201 VDD|VSS VDD|VSS pfet_05v0 L=0.5U W=0.9U AS=0.396P AD=0.396P
++ PS=2.68U PD=2.68U
+* device instance $80 r0 *1 2575.18,1136.3 pfet_05v0
+M$80 Z|tieH \$207 VDD|VSS VDD|VSS pfet_05v0 L=0.5U W=0.9U AS=0.396P AD=0.396P
++ PS=2.68U PD=2.68U
+* device instance $81 r0 *1 1885.31,1302.495 nfet_03v3
+M$81 VDD|VSS VDD|VSS VDD|VSS gf180mcu_gnd nfet_03v3 L=1U W=32U AS=18.56P
++ AD=18.56P PS=68.64U PD=68.64U
+* device instance $82 r0 *1 1888.35,1302.495 nfet_03v3
+M$82 \$357 \$357 VDD|VSS gf180mcu_gnd nfet_03v3 L=1U W=80U AS=48P AD=48P
++ PS=172U PD=172U
+* device instance $92 r0 *1 1919.2,1302.495 nfet_03v3
+M$92 \$368 \$357 VDD|VSS gf180mcu_gnd nfet_03v3 L=1U W=8U AS=4.8P AD=4.8P
++ PS=17.2U PD=17.2U
+* device instance $95 r0 *1 1888.35,1315.025 nfet_03v3
+M$95 \$356 \$356 \$357 gf180mcu_gnd nfet_03v3 L=1U W=80U AS=48P AD=48P PS=172U
++ PD=172U
+* device instance $105 r0 *1 1919.2,1315.025 nfet_03v3
+M$105 \$347 \$356 \$368 gf180mcu_gnd nfet_03v3 L=1U W=8U AS=4.8P AD=4.8P
++ PS=17.2U PD=17.2U
+* device instance $107 r0 *1 2575.225,1130.87 nfet_05v0
+M$107 ZN|tieL \$201 VDD|VSS gf180mcu_gnd nfet_05v0 L=0.6U W=0.66U AS=0.2904P
++ AD=0.2904P PS=2.2U PD=2.2U
+* device instance $108 r0 *1 2575.23,1138.28 nfet_05v0
+M$108 \$207 \$207 VDD|VSS gf180mcu_gnd nfet_05v0 L=0.6U W=0.66U AS=0.2904P
++ AD=0.2904P PS=2.2U PD=2.2U
+* device instance $109 r0 *1 2048.73,1214.785 nfet_03v3_dn
+M$109 VDD|VSS VDD|VSS VDD|VSS VDD|VSS nfet_03v3_dn L=1U W=48U AS=27.84P
++ AD=27.84P PS=109.92U PD=109.92U
+* device instance $110 r0 *1 2051.77,1214.785 nfet_03v3_dn
+M$110 \$248 \$248 VDD|VSS VDD|VSS nfet_03v3_dn L=1U W=4U AS=2.4P AD=2.4P
++ PS=9.2U PD=9.2U
+* device instance $111 r0 *1 2054.72,1214.785 nfet_03v3_dn
+M$111 VCM_OUT \$248 VDD|VSS VDD|VSS nfet_03v3_dn L=1U W=4U AS=2.4P AD=2.4P
++ PS=9.2U PD=9.2U
+* device instance $114 r0 *1 2051.77,1249.995 nfet_03v3_dn
+M$114 \$268 \$268 VDD|VSS VDD|VSS nfet_03v3_dn L=1U W=4U AS=2.4P AD=2.4P
++ PS=9.2U PD=9.2U
+* device instance $115 r0 *1 2054.72,1249.995 nfet_03v3_dn
+M$115 \$288 \$268 VDD|VSS VDD|VSS nfet_03v3_dn L=1U W=4U AS=2.4P AD=2.4P
++ PS=9.2U PD=9.2U
+* device instance $118 r0 *1 2051.77,1260.685 nfet_03v3_dn
+M$118 \$250 \$250 \$268 VDD|VSS nfet_03v3_dn L=1U W=4U AS=2.4P AD=2.4P PS=9.2U
++ PD=9.2U
+* device instance $119 r0 *1 2054.72,1260.685 nfet_03v3_dn
+M$119 BCM_OUT \$250 \$288 VDD|VSS nfet_03v3_dn L=1U W=4U AS=2.4P AD=2.4P
++ PS=9.2U PD=9.2U
+* device instance $122 r0 *1 2048.59,1285.215 nfet_03v3_dn
+M$122 CCM_OUT \$314 \$312 VDD|VSS nfet_03v3_dn L=1U W=8U AS=4.8P AD=4.8P
++ PS=18.4U PD=18.4U
+* device instance $123 r0 *1 2051.54,1285.215 nfet_03v3_dn
+M$123 \$314 \$312 VDD|VSS VDD|VSS nfet_03v3_dn L=1U W=8U AS=4.8P AD=4.8P
++ PS=18.4U PD=18.4U
+* device instance $128 r0 *1 2048.59,1295.905 nfet_03v3_dn
+M$128 \$348 \$252 VDD|VSS VDD|VSS nfet_03v3_dn L=1U W=8U AS=4.8P AD=4.8P
++ PS=18.4U PD=18.4U
+* device instance $129 r0 *1 2051.54,1295.905 nfet_03v3_dn
+M$129 \$312 \$252 VDD|VSS VDD|VSS nfet_03v3_dn L=1U W=8U AS=4.8P AD=4.8P
++ PS=18.4U PD=18.4U
+* device instance $134 r0 *1 2048.59,1306.595 nfet_03v3_dn
+M$134 \$314 \$348 VDD|VSS VDD|VSS nfet_03v3_dn L=1U W=8U AS=4.8P AD=4.8P
++ PS=18.4U PD=18.4U
+* device instance $135 r0 *1 2051.54,1306.595 nfet_03v3_dn
+M$135 \$252 \$314 \$348 VDD|VSS nfet_03v3_dn L=1U W=8U AS=4.8P AD=4.8P PS=18.4U
++ PD=18.4U
+* device instance $139 r0 *1 2499.455,1090.395 diode_nd2ps_06v0
+D$139 VDD|VSS ENA diode_nd2ps_06v0 A=400P P=160U
+* device instance $143 r0 *1 2500.1,1189.545 diode_nd2ps_06v0
+D$143 VDD|VSS VBIAS_INT diode_nd2ps_06v0 A=400P P=160U
+* device instance $147 r0 *1 2499.755,1289.62 diode_nd2ps_06v0
+D$147 VDD|VSS VIN_INT diode_nd2ps_06v0 A=400P P=160U
+* device instance $151 r0 *1 2499.435,1146.675 diode_pd2nw_06v0
+D$151 ENA VDD|VSS diode_pd2nw_06v0 A=400P P=160U
+* device instance $155 r0 *1 2500.08,1245.825 diode_pd2nw_06v0
+D$155 VBIAS_INT VDD|VSS diode_pd2nw_06v0 A=400P P=160U
+* device instance $159 r0 *1 2499.735,1345.9 diode_pd2nw_06v0
+D$159 VIN_INT VDD|VSS diode_pd2nw_06v0 A=400P P=160U
+* device instance $163 r0 *1 2555.015,1117.795 ppolyf_u
+R$163 ENA EN gf180mcu_gnd 87.5 ppolyf_u L=10U W=40U
+* device instance $164 r0 *1 2555.66,1216.945 ppolyf_u
+R$164 VBIAS_INT VBIAS gf180mcu_gnd 87.5 ppolyf_u L=10U W=40U
+* device instance $165 r0 *1 2555.315,1317.02 ppolyf_u
+R$165 VIN_INT VIN gf180mcu_gnd 87.5 ppolyf_u L=10U W=40U
+.ENDS TOP
