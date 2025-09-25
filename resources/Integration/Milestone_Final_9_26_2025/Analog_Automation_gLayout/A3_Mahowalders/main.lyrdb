@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>DRC Run Report at</description>
- <original-file>/foss/designs/mahowalders-sscs-chipathon-2025/resources/Integration/Milestone_Final_9_26_2025/Analog_Automation_gLayout/A3_Mahowalders/topv14.gds</original-file>
+ <original-file>/foss/designs/mahowalders-sscs-chipathon-2025/resources/Integration/Milestone_Final_9_26_2025/Analog_Automation_gLayout/A3_Mahowalders/topv17.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
  <top-cell>TOP</top-cell>
  <tags>
@@ -3992,7 +3992,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (2580.425,1146.525;2580.425,1147.905;2581.325,1147.905;2581.325,1146.525)</value>
+    <value>polygon: (2574.595,1132.4;2574.595,1133.3;2575.975,1133.3;2575.975,1132.4)</value>
    </values>
   </item>
   <item>
@@ -4004,7 +4004,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (2580.445,1137.49;2580.445,1138.87;2581.345,1138.87;2581.345,1137.49)</value>
+    <value>polygon: (2574.5,1135.85;2574.5,1136.75;2575.88,1136.75;2575.88,1135.85)</value>
    </values>
   </item>
   <item>
@@ -4016,7 +4016,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (2578.565,1146.525;2578.565,1148.005;2579.225,1148.005;2579.225,1146.525)</value>
+    <value>polygon: (2574.5,1137.95;2574.5,1138.61;2575.98,1138.61;2575.98,1137.95)</value>
    </values>
   </item>
   <item>
@@ -4028,7 +4028,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (2578.585,1137.39;2578.585,1138.87;2579.245,1138.87;2579.245,1137.39)</value>
+    <value>polygon: (2574.495,1130.54;2574.495,1131.2;2575.975,1131.2;2575.975,1130.54)</value>
    </values>
   </item>
  </items>
