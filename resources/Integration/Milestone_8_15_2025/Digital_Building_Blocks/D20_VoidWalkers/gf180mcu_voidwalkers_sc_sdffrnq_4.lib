@@ -1,0 +1,178 @@
+library (gf180mcu_osu_sc_gp9t3v3_tt_sdffrq) {
+  technology : cmos;
+  delay_model : table_lookup;
+  bus_naming_style : "%s-%d";
+
+  /* Units */
+  time_unit : "1ns";
+  voltage_unit : "1V";
+  current_unit : "1uA";
+  pulling_resistance_unit : "1kOhm";
+  leakage_power_unit : "1nW";
+  capacitive_load_unit : "1pF";
+
+  /* Slew characteristics */
+  slew_upper_threshold_pct_rise : 80;
+  slew_lower_threshold_pct_rise : 20;
+  slew_upper_threshold_pct_fall : 80;
+  slew_lower_threshold_pct_fall : 20;
+  input_threshold_pct_rise : 50;
+  input_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+
+  /* Operating Conditions */
+  nom_process : 1;
+  nom_voltage : 3.3;
+  nom_temperature : 25;
+
+  /* Table Templates */
+  lu_table_template (setup_template_3x3) {
+    variable_1 : related_pin_transition;
+    variable_2 : constrained_pin_transition;
+    index_1 ("0.08, 0.2, 0.4");
+    index_2 ("0.42, 0.6, 1.2");
+  }
+  lu_table_template (hold_template_3x3) {
+    variable_1 : related_pin_transition;
+    variable_2 : constrained_pin_transition;
+    index_1 ("0.08, 0.2, 0.4");
+    index_2 ("0.42, 0.6, 1.2");
+  }
+  lu_table_template (delay_template_3x3) {
+    variable_1 : input_net_transition;
+    variable_2 : total_output_net_capacitance;
+    index_1 ("0.08, 0.2, 0.4");
+    index_2 ("0.42, 0.6, 1.2");
+  }
+
+  cell (SDFFRQ) {
+    area : 121;
+    ff(IQ,IQN) { 
+      clocked_on : "(CLK)" ; 
+      next_state : "((SE&SI)|(D&(!SE)))" ; 
+      clear : "(R)";
+    }
+    pg_pin (VDD) {
+      voltage_name : VDD;
+      pg_type : primary_power;
+    }
+    pg_pin (VSS) {
+      voltage_name : VSS;
+      pg_type : primary_ground;
+    }
+    pg_pin (VPW) {
+      voltage_name : VPW;
+      pg_type : pwell;
+    }
+    pg_pin (VNW) {
+      voltage_name : VNW;
+      pg_type : nwell;
+    }
+    pin (CLK) {
+      direction : input;
+      capacitance : 0.009118;
+      clock : true;
+    }
+    pin (D) {
+      direction : input;
+      capacitance : 0.009591;
+    }
+    pin (SI) {
+      direction : input;
+      capacitance : 0.002496;
+    }
+    pin (SE) {
+      direction : input;
+      capacitance : 0.004847;
+    }
+    pin (D) {
+      direction : input;
+      capacitance : 0.003255;
+      timing () {
+        related_pin : "CLK";
+        timing_type : setup_rising;
+        rise_constraint (setup_template_3x3) {
+          index_1 ("0.08, 0.2, 0.4");
+          index_2 ("0.42, 0.6, 1.2");
+          values ( \
+            "1.480000, 1.480000, 1.480000", \
+            "1.480000, 1.480000, 1.480000", \
+            "1.480000, 1.480000, 1.480000");
+        }
+        fall_constraint (setup_template_3x3) {
+          index_1 ("0.08, 0.2, 0.4");
+          index_2 ("0.42, 0.6, 1.2");
+          values ( \
+            "1.480000, 1.480000, 1.480000", \
+            "1.480000, 1.480000, 1.480000", \
+            "1.480000, 1.480000, 1.480000");
+        }
+      }
+      timing () {
+        related_pin : "CLK";
+        timing_type : hold_rising;
+        rise_constraint (hold_template_3x3) {
+          index_1 ("0.08, 0.2, 0.4");
+          index_2 ("0.42, 0.6, 1.2");
+          values ( \
+            "1.080000, 1.080000, 1.080000", \
+            "1.200000, 1.200000, 1.200000", \
+            "1.400000, 1.400000, 1.400000");
+        }
+        fall_constraint (hold_template_3x3) {
+          index_1 ("0.08, 0.2, 0.4");
+          index_2 ("0.42, 0.6, 1.2");
+          values ( \
+            "1.080000, 1.080000, 1.080000", \
+            "1.200000, 1.200000, 1.200000", \
+            "1.400000, 1.400000, 1.400000");
+        }
+      }
+    }
+    pin (Q) {
+      direction : output;
+      function : "D";
+      timing () {
+        related_pin : "Q";
+        timing_type : rising_edge;
+        cell_rise (delay_template_3x3) {
+          index_1 ("0.08, 0.2, 0.4");
+          index_2 ("0.42, 0.6, 1.2");
+          values ( \
+            "3.683763, 4.477505, 7.123236", \
+            "3.683761, 4.477504, 7.123235", \
+            "3.683762, 4.477504, 7.123235");
+        }
+        rise_transition (delay_template_3x3) {
+          index_1 ("0.08, 0.2, 0.4");
+          index_2 ("0.42, 0.6, 1.2");
+          values ( \
+            "2.684963, 3.827711, 7.636865", \
+            "2.684963, 3.827711, 7.636865", \
+            "2.684963, 3.827712, 7.636865");
+        }
+        cell_fall (delay_template_3x3) {
+          index_1 ("0.08, 0.2, 0.4");
+          index_2 ("0.42, 0.6, 1.2");
+          values ( \
+            "3.516980, 4.216102, 6.493320", \
+            "3.517222, 4.216701, 6.495318", \
+            "3.517573, 4.217685, 6.498577");
+        }
+        fall_transition (delay_template_3x3) {
+          index_1 ("0.08, 0.2, 0.4");
+          index_2 ("0.42, 0.6, 1.2");
+          values ( \
+            "2.233881, 3.185004, 6.355405", \
+            "2.233882, 3.185003, 6.355405", \
+            "2.233883, 3.185001, 6.355403");
+        }
+      }
+    }
+    pin (R) {
+      direction : input;
+      capacitance : 0.000000;
+    }
+  }
+}
