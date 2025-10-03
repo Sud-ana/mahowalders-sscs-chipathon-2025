@@ -44,7 +44,7 @@ This document outlines the official schedule for the SSCS Chipathon 2025 event.
 | Week 38 | Sept 19, 2025 | **Verification** 👥 | Secondary ESD (Juan/Luighi) | [Watch](https://us06web.zoom.us/rec/share/8HRdHS6hELSpPIPbcJJf0Tf10GPoR6HS8xVHj132uSUYPWvNkmJg34qYXdOvrXMv.sWAuOdZAedsG54qW) | [View](https://docs.google.com/presentation/d/e/2PACX-1vQuEsXpA4C4ie9dr-eu9PBdjXtyV1GGf7sdYyfdjH9h3LH_zYCtEFZjvsj7I9GyGw/pub) | [Submit](https://docs.google.com/forms/d/e/1FAIpQLSfqkbSwWSr-HhkcmaOgPfpo7I0Qf8q_Ytvv6luK3F3gFZT4zQ/viewform?usp=dialog) |
 | Week 39 | Sept 26, 2025 | **Final Chip Review** 👥 | - | [Watch](https://us06web.zoom.us/rec/share/Up-FHGu_bNI9yVjBjoAjY8L8eFc6QoHM4I8qiY0VRtBfIytqmzTGrlRPmNBe64_o.u4IkWivv-0_jolL8) | [View](https://docs.google.com/presentation/d/e/2PACX-1vSY_sdsC5K8m7Yj6v_Rrdxcl_LnFZr_OOW3MlNRxNuzvAWKViyBBWCFxKr7vPz96w/pub) | [Submit](https://docs.google.com/forms/d/e/1FAIpQLSctfRiyCC2JUN06qKRvyKfiYbYdCDAsXXlW9Pl-UEInspW1lg/viewform?usp=dialog) |
 |  | Sept 26, 2025 | **Final Submission** | DRC-clean GDS to Channel Partner |  |  |  |  |
-| Week 40 | Oct 03, 2025 | **Post-mortem** 👥 | Project retrospective | [TBA]() | [TBA]() | [TBA]() |
+| Week 40 | Oct 03, 2025 | **Post-mortem** 👥 | Project retrospective | [Watch](https://us06web.zoom.us/rec/share/vW33_H8FEY9AtS_zofjLu-B-SKvmQv-ASZ5JOiXVdUzWqgkIXmgrVs4qV2lLY9PL.L4l8OW8kjkP9PwkF) | [View](https://docs.google.com/presentation/d/e/2PACX-1vTQZM3mQX1x6udRD6Vn0JEPKIdwCAfGB0Hsm0J9Q7JqSIaxaTIIZwQrg-wBBB5TrQ/pub) |  |
 
 ### Phase 5: Manufacturing and Testing
 | Date | Event | 🔴 Recording | 📊 Slides | 📄 Report |
